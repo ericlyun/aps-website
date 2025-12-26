@@ -1,6 +1,7 @@
 # SITE SETTINGS
 title: APS                              # Title in top navigation bar (navbar) and <head>
 author: Yun Liang @ Peking University   # Used for copyright statement in footer
+repository: ericlyun/aps-website        # GitHub repository in format username/repo
 baseurl: ""                             # Only required if your site is in a directory e.g. https://username.github.io/sitename
                                         # which has url: "https://username.github.io" (no slash) and baseurl: "/sitename" (leading slash)
                                         # A baseurl affects internal links, see http://peterdesmet.com/petridish/markdown/#links
