@@ -1,6 +1,10 @@
-# petridish 🧫
+# APS - Agile Processor Specialization
 
-Petridish is a Jekyll theme for research project websites. Or your personal blog or lab website. 👩‍🔬 It's mobile-friendly (thanks to [Bootstrap 5](https://getbootstrap.com/docs/5.1/)), free, easy to customize, and designed to work well with [GitHub Pages](https://pages.github.com/).
+> Contents on the way...
+
+<details>
+  <summary>Website building: Jekyll/Petridish </summary>
+
 
 ## Installation
 
@@ -55,3 +59,6 @@ The repository structure follows that of Jekyll websites.
 - Top navigation: [_data/navigation.yml](_data/navigation.yml)
 - Footer content: [_data/footer.yml](_data/footer.yml)
 - Team members: [_data/team.yml](_data/team.yml)
+
+</details>
+
