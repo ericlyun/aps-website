@@ -32,6 +32,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules
+  - vendor
   - LICENSE
   - package-lock.json
   - package.json
