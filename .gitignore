@@ -7,5 +7,10 @@ Gemfile.lock
 # npm
 node_modules
 
+# pixi
+.pixi
+
 # Mac OS X
 .DS_Store
+
+CLAUDE.md
