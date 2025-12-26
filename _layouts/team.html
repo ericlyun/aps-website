@@ -1,0 +1,130 @@
+---
+layout: default
+description: Template for team page.
+---
+
+{{ content }}
+
+{% if site.people.size > 0 %}
+{% assign people = site.people | sort: 'start' %}
+
+{% comment %} Faculty/PIs first {% endcomment %}
+{% assign faculty = people | where_exp: "person", "person.title contains 'Professor'" %}
+{% if faculty.size > 0 %}
+<h2>Faculty</h2>
+{% for member in faculty %}
+  <div class="d-flex team-member mb-4">
+    <div class="flex-shrink-0 me-3">
+      {% if member.image %}
+        <a href="{{ member.url | relative_url }}">
+          <img src="{{ member.image | relative_url }}" alt="{{ member.name }}" style="max-width: 150px; height: auto;">
+        </a>
+      {% endif %}
+    </div>
+    <div>
+      <h5 id="{{ member.name | strip | url_encode }}">
+        <a href="{{ member.url | relative_url }}">{{ member.name }}</a>
+        {% if member.role %}
+          <small class="text-muted">| {{ member.role }}</small>
+        {% endif %}
+      </h5>
+      <p class="text-muted mb-1">{{ member.title }}{% if member.dept %}, {{ member.dept }}{% endif %}</p>
+
+      {{ member.content | truncatewords: 30 }}
+
+      <ul class="list-inline mb-0">
+        {% if member.webpage %}
+          <li class="list-inline-item">
+            <a href="{{ member.webpage }}"><i class="fas fa-globe"></i></a>
+          </li>
+        {% endif %}
+        {% if member.googlescholar %}
+          <li class="list-inline-item">
+            <a href="https://scholar.google.com/citations?user={{ member.googlescholar }}"><i class="fa-brands fa-google-scholar"></i></a>
+          </li>
+        {% endif %}
+        {% if member.github %}
+          <li class="list-inline-item">
+            <a href="https://github.com/{{ member.github }}"><i class="fa-brands fa-github"></i></a>
+          </li>
+        {% endif %}
+        {% if member.email %}
+          <li class="list-inline-item">
+            <a href="mailto:{{ member.email }}"><i class="fa-regular fa-envelope"></i></a>
+          </li>
+        {% endif %}
+      </ul>
+    </div>
+  </div>
+{% endfor %}
+{% endif %}
+
+{% comment %} Students {% endcomment %}
+{% assign students = people | where_exp: "person", "person.title contains 'Student'" | where_exp: "person", "person.end == ''" %}
+{% if students.size > 0 %}
+<h2>Students</h2>
+<div class="row">
+{% for member in students %}
+  <div class="col-md-6 mb-4">
+    <div class="d-flex team-member">
+      <div class="flex-shrink-0 me-3">
+        {% if member.image %}
+          <a href="{{ member.url | relative_url }}">
+            <img src="{{ member.image | relative_url }}" alt="{{ member.name }}" style="max-width: 100px; height: auto;">
+          </a>
+        {% endif %}
+      </div>
+      <div>
+        <h6 id="{{ member.name | strip | url_encode }}">
+          <a href="{{ member.url | relative_url }}">{{ member.name }}</a>
+        </h6>
+        <p class="text-muted small mb-1">{{ member.title }}{% if member.role %} | {{ member.role }}{% endif %}</p>
+
+        <ul class="list-inline mb-0 small">
+          {% if member.webpage %}
+            <li class="list-inline-item">
+              <a href="{{ member.webpage }}"><i class="fas fa-globe"></i></a>
+            </li>
+          {% endif %}
+          {% if member.github %}
+            <li class="list-inline-item">
+              <a href="https://github.com/{{ member.github }}"><i class="fa-brands fa-github"></i></a>
+            </li>
+          {% endif %}
+          {% if member.email %}
+            <li class="list-inline-item">
+              <a href="mailto:{{ member.email }}"><i class="fa-regular fa-envelope"></i></a>
+            </li>
+          {% endif %}
+        </ul>
+      </div>
+    </div>
+  </div>
+{% endfor %}
+</div>
+{% endif %}
+
+{% comment %} Alumni {% endcomment %}
+{% assign alumni = people | where_exp: "person", "person.end != ''" | sort: 'end' | reverse %}
+{% if alumni.size > 0 %}
+<h2>Alumni</h2>
+<div class="row">
+{% for member in alumni %}
+  <div class="col-md-6 mb-3">
+    <div class="d-flex team-member">
+      <div>
+        <h6>
+          {% if member.webpage %}<a href="{{ member.webpage }}">{{ member.name }}</a>{% else %}{{ member.name }}{% endif %}
+          <small class="text-muted">({{ member.start | date: "%Y" }} - {{ member.end | date: "%Y" }})</small>
+        </h6>
+        <p class="text-muted small mb-0">{{ member.title }}{% if member.after %} &rarr; {{ member.after }}{% endif %}</p>
+      </div>
+    </div>
+  </div>
+{% endfor %}
+</div>
+{% endif %}
+
+{% else %}
+<p class="text-muted">No team members added yet.</p>
+{% endif %}

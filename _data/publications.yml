@@ -1,0 +1,76 @@
+# Publications Data
+# Each entry should have: title, authors, venue, year, and optionally: doi, code, pdf, research
+
+# Conference Papers
+2025.iccad.aps:
+  title: "APS: Open-Source Hardware-Software Co-Design Framework for Agile Processor Specialization"
+  authors: [Youwei Xiao]  # Add author IDs from authors.yml
+  venue: "ICCAD 2025"
+  year: 2025
+  note: "Invited Paper"
+  pdf: /assets/APS__ICCAD25_.pdf
+  research: [hls, hdl, processor, compiler]
+
+# Tool Papers
+2024.fpga.popa:
+  title: "Performance-Oriented Polyhedral Analysis"
+  authors: []
+  venue: "FPGA 2024"
+  year: 2024
+  doi: https://dl.acm.org/doi/10.1145/3626202.3637566
+  code: https://github.com/pku-liang/popa/tree/mlir
+  research: [hls]
+
+2023.fccm.popa:
+  title: "POPA: Performance-Oriented Polyhedral Analysis"
+  authors: []
+  venue: "FCCM 2023"
+  year: 2023
+  doi: https://ieeexplore.ieee.org/document/10171577
+  code: https://github.com/pku-liang/popa/tree/mlir
+  research: [hls]
+
+2022.iccad.hector:
+  title: "Hector: Multi-Level Intermediate Representation for Hardware Synthesis"
+  authors: []
+  venue: "ICCAD 2022"
+  year: 2022
+  doi: https://ieeexplore.ieee.org/document/10068908
+  code: https://github.com/pku-liang/Hector/tree/tutorial-aspdac
+  research: [hls, hdl]
+
+2024.micro.hestia:
+  title: "Hestia: Hardware Synthesis Framework"
+  authors: []
+  venue: "MICRO 2024"
+  year: 2024
+  doi: https://ieeexplore.ieee.org/abstract/document/10764625
+  code: https://github.com/pku-liang/hestia/tree/main
+  research: [hls]
+
+2024.fpga.cement:
+  title: "Cement: Streamlining FPGA Hardware Design with Cycle-Deterministic EHDL"
+  authors: []
+  venue: "FPGA 2024"
+  year: 2024
+  doi: https://dl.acm.org/doi/10.1145/3626202.3637561
+  code: https://github.com/pku-liang/Cement/tree/cmt2
+  research: [hdl]
+
+2023.micro.khronos:
+  title: "Khronos: A RISC-V Simulator"
+  authors: []
+  venue: "MICRO 2023"
+  year: 2023
+  doi: https://dl.acm.org/doi/10.1145/3613424.3614301
+  code: https://github.com/pku-liang/ksim/tree/aspdac24-tutorial
+  research: [processor]
+
+# Preprints
+2024.arxiv.aquas:
+  title: "AQUAS: Automated Quantization-Aware Synthesis"
+  authors: []
+  venue: "arXiv"
+  year: 2024
+  doi: https://www.arxiv.org/abs/2511.22267
+  research: [hls]

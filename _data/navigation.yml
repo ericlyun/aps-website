@@ -1,0 +1,15 @@
+# Links listed below will be included in your site's navbar (navigation at the top)
+
+- text: Home
+  href: /
+- text: Publications
+  href: /publications/
+- text: Research
+  href: /research/
+- text: Tutorials
+  href: /tutorials/
+- text: Team
+  href: /team/
+- text: GitHub
+  href: https://github.com/pku-liang/aps/
+  new_window: true

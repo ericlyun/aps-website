@@ -1,0 +1,38 @@
+{% assign pub = include.pub %}
+
+<li class="publication-item mb-2">
+  <strong>{{ pub.title }}</strong>
+  {% if pub.authors and pub.authors.size > 0 %}
+  <br>
+  <span class="text-muted">
+  {% for author_name in pub.authors %}
+    {% assign person = site.people | where: "name", author_name | first %}
+    {% if person %}
+      {% if person.webpage %}<a href="{{ person.webpage }}">{{ person.name }}</a>{% else %}<a href="{{ person.url | relative_url }}">{{ person.name }}</a>{% endif %}{% unless forloop.last %}, {% endunless %}
+    {% else %}
+      {{ author_name }}{% unless forloop.last %}, {% endunless %}
+    {% endif %}
+  {% endfor %}
+  </span>
+  {% endif %}
+  <br>
+  <em>{{ pub.venue }}</em>{% if pub.note %} <span class="badge bg-info text-dark">{{ pub.note }}</span>{% endif %}
+  {% unless include.hide_research %}
+  {% if pub.research %}
+  <span class="ms-2">
+  {% for research_tag in pub.research %}
+    {% assign research_page = site.research | where: "tag", research_tag | first %}
+    {% if research_page %}
+    <a href="{{ research_page.url | relative_url }}" class="badge bg-secondary text-decoration-none">{{ research_page.title }}</a>
+    {% endif %}
+  {% endfor %}
+  </span>
+  {% endif %}
+  {% endunless %}
+  {% if pub.pdf or pub.doi or pub.code %}
+  <br>
+  {% if pub.pdf %}<a href="{{ pub.pdf | relative_url }}" class="btn btn-sm btn-outline-primary py-0 px-1">PDF</a> {% endif %}
+  {% if pub.doi %}<a href="{{ pub.doi }}" class="btn btn-sm btn-outline-secondary py-0 px-1">DOI</a> {% endif %}
+  {% if pub.code %}<a href="{{ pub.code }}" class="btn btn-sm btn-outline-dark py-0 px-1">Code</a> {% endif %}
+  {% endif %}
+</li>

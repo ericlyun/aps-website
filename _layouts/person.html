@@ -1,0 +1,80 @@
+---
+layout: base
+description: Person profile layout
+---
+
+<div class="row">
+  <div class="col-md-10 col-lg-8 mx-auto">
+    <div class="d-flex flex-wrap mb-4">
+      {% if page.image %}
+      <div class="flex-shrink-0 me-4 mb-3">
+        <img src="{{ page.image | relative_url }}" alt="{{ page.name }}" style="max-width: 200px; height: auto;">
+      </div>
+      {% endif %}
+      <div>
+        <h1>{{ page.name }}</h1>
+        <h5 class="text-muted">{{ page.title }}{% if page.role %} | {{ page.role }}{% endif %}</h5>
+        {% if page.dept %}<p>{{ page.dept }}{% if page.institution %}, {{ page.institution }}{% endif %}</p>{% endif %}
+
+        <ul class="list-inline">
+          {% if page.webpage %}
+          <li class="list-inline-item">
+            <a href="{{ page.webpage }}"><i class="fas fa-globe"></i> Website</a>
+          </li>
+          {% endif %}
+          {% if page.email %}
+          <li class="list-inline-item">
+            <a href="mailto:{{ page.email }}"><i class="fa-regular fa-envelope"></i> Email</a>
+          </li>
+          {% endif %}
+          {% if page.github %}
+          <li class="list-inline-item">
+            <a href="https://github.com/{{ page.github }}"><i class="fa-brands fa-github"></i> GitHub</a>
+          </li>
+          {% endif %}
+          {% if page.googlescholar %}
+          <li class="list-inline-item">
+            <a href="https://scholar.google.com/citations?user={{ page.googlescholar }}"><i class="fa-brands fa-google-scholar"></i> Scholar</a>
+          </li>
+          {% endif %}
+        </ul>
+      </div>
+    </div>
+
+    {{ content }}
+
+    {% if page.research %}
+    <hr>
+    <h2>Research Areas</h2>
+    <div class="row">
+    {% for research_tag in page.research %}
+      {% assign research_page = site.research | where: "tag", research_tag | first %}
+      {% if research_page %}
+      <div class="col-md-6 mb-2">
+        <a href="{{ research_page.url | relative_url }}" class="btn btn-outline-primary btn-sm w-100">{{ research_page.title }}</a>
+      </div>
+      {% endif %}
+    {% endfor %}
+    </div>
+    {% endif %}
+
+    <hr>
+    <h2>Publications</h2>
+    {% assign has_pubs = false %}
+    <ul class="list-unstyled">
+    {% for pub_item in site.data.publications %}
+      {% assign pub = pub_item[1] %}
+      {% if pub.authors contains page.name %}
+        {% assign has_pubs = true %}
+        {% include publication.html pub=pub hide_research=true %}
+      {% endif %}
+    {% endfor %}
+    </ul>
+    {% unless has_pubs %}
+    <p class="text-muted">No publications listed yet.</p>
+    {% endunless %}
+
+    <hr>
+    <p><a href="{{ '/team/' | relative_url }}">&larr; Back to team</a></p>
+  </div>
+</div>
