@@ -2,12 +2,12 @@
 name: Youwei Xiao
 title: PhD Student
 role: Lead Developer
-dept: School of Computer Science
+dept:
 institution: Peking University
 webpage: https://uv-xiao.github.io/
 image: assets/images/team/youwei.jpg
 email: shallwe@pku.edu.cn
-github: pku-liang
+github: uv-xiao
 start: 2021-01-01
 end: ''
 research:
@@ -17,4 +17,4 @@ research:
   - compiler
 ---
 
-Youwei Xiao is a PhD student working on the APS framework, focusing on hardware synthesis and compiler infrastructure for RISC-V ISA extensions.
+Youwei Xiao is a PhD student working on the APS framework, focusing on software techniques for both hardware synthesis and compiler stacks.

@@ -1,32 +1,11 @@
 # News items - most recent first
 # Each item has: date, title, and optionally: link, description
 
-- date: 2025-01-01
-  title: "APS paper accepted at ICCAD 2025"
-  description: "Our paper on Agile Processor Specialization has been accepted as an invited paper at ICCAD 2025."
-  link: /publications/
-
-- date: 2025-01-01
-  title: "Tutorial at ASP-DAC 2025"
-  description: "We are presenting a tutorial on Agile Development of Domain-Specific Processors at ASP-DAC 2025."
+- date: 2026-01-19
+  title: "APS tutorial will be presented at ASP-DAC 2026"
+  description: "We will give a tutorial to cover the innovative components of our APS ecosystem!"
   link: /tutorials/
-
-- date: 2025-03-01
-  title: "Tutorial at DATE 2025"
-  description: "High-Level Synthesis for RISC-V Accelerators tutorial at DATE 2025."
-  link: https://ericlyun.github.io/tutorial-date2025
-
-- date: 2025-03-01
-  title: "Tutorial at ASPLOS 2025"
-  description: "Hardware-Software Co-Design for Domain-Specific Processors tutorial at ASPLOS 2025."
-  link: https://ericlyun.github.io/tutorial-asplos2025
-
-- date: 2024-11-01
-  title: "AQUAS preprint available"
-  description: "Our preprint on Automated Quantization-Aware Synthesis is now available on arXiv."
-  link: https://www.arxiv.org/abs/2511.22267
-
-- date: 2024-11-01
-  title: "Hestia paper at MICRO 2024"
-  description: "Our Hestia hardware synthesis framework paper published at MICRO 2024."
-  link: https://ieeexplore.ieee.org/abstract/document/10764625
+- date: 2025-10-26
+  title: "APS paper presented at ICCAD 2025"
+  description: "Our paper on Agile Processor Specialization has been presented as an invited paper at ICCAD 2025."
+  link: /publications/

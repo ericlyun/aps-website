@@ -2,7 +2,7 @@
 layout: home
 title: APS - Agile Processor Specialization
 description: Open-Source Hardware-Software Co-Design Framework for RISC-V ISAXs
-background: /assets/theme/images/illustration.png
+background: /assets/images/illustration.png
 permalink: /
 ---
 
@@ -30,7 +30,7 @@ permalink: /
 **APS (Agile Processor Specialization)** is an open-source framework for agile hardware-software co-design of domain-specific processors. It provides both hardware synthesis and compiler infrastructure to facilitate the development of instruction extensions (ISAXs) for domain acceleration on RISC-V platforms.
 
 {:.col-md-12 .mx-auto}
-![alt text](assets/theme/images/position.png)
+![alt text](assets/images/position.png)
 _APS is both open-source and fully integrated, enhancing productivity across all audiences in hardware design and adoption for domain-specific acceleration._
 
 ### APS's Ecosystem
@@ -38,7 +38,7 @@ _APS is both open-source and fully integrated, enhancing productivity across all
 APS aims to build a comprehensive ecosystem based on the **MLIR** infrastructure, covering the entire hardware-software co-design flow. Our ultimate vision is to only take applications in the target domain as the inputs, and automatically generate the complete solution artifacts comprising optimized ISAXs, architecture designs, hardware implementation, and software stacks without any manual intervention.
 
 {:.col-md-12 .mx-auto}
-![alt text](assets/theme/images/vision.png)
+![alt text](assets/images/vision.png)
 _APS is an innovative practice of MLIR-based, automated hardware-software co-design._
 
 

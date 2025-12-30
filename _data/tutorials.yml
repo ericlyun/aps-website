@@ -1,58 +1,30 @@
 # Tutorials organized by status and date
 upcoming:
   - conference: ASP-DAC 2026
-    title: "Agile Processor Specialization with APS Framework"
-    website: https://www.aspdac.com/aspdac2026/tutorial/
-    date: 2026-01-01
+    title: "APS: An MLIR-Based Hardware-Software Co-design Framework for Agile Processor Specialization"
+    website: https://www.aspdac.com/aspdac2026/program/program-abstract.html#T5
+    date: 2026-01-19
     status: upcoming
     details: "Coming soon"
 
 past:
-  - conference: ASPLOS 2025
-    title: "Hardware-Software Co-Design for Domain-Specific Processors"
-    website: https://ericlyun.github.io/tutorial-asplos2025
-    date: 2025-03-01
 
   - conference: ISEDA 2025
-    title: "Introduction to RISC-V ISA Extensions"
-    website: https://ericlyun.github.io/tutorial-iseda2025
-    date: 2025-04-01
+    title: "Agile Hardware Specialization: A toolbox for Agile Chip Front-end Design"
+    website: https://ericlyun.me/tutorial-iseda2025/
+    date: 2025-05-09
+
+  - conference: ASPLOS 2025
+    title: "Agile Hardware Specialization (AHS): A toolbox for Agile Chip Front-end Design"
+    website: https://ericlyun.github.io/tutorial-asplos2025
+    date: 2025-03-30
 
   - conference: DATE 2025
-    title: "High-Level Synthesis for RISC-V Accelerators"
+    title: "Agile Hardware Specialization: A toolbox for Agile Chip Front-end Design"
     website: https://ericlyun.github.io/tutorial-date2025
-    date: 2025-03-01
+    date: 2025-03-31
 
   - conference: ASP-DAC 2025
-    title: "Agile Development of Domain-Specific Processors"
+    title: "AHS: An EDA toolbox for Agile Chip Front-end Design"
     website: https://ericlyun.github.io/tutorial-aspdac2025
-    date: 2025-01-01
-
-# Related tool tutorials
-related_tools:
-  - name: POPA
-    website: https://github.com/pku-liang/popa
-    event: "ASP-DAC 2024"
-
-  - name: Hector
-    website: https://github.com/pku-liang/Hector/tree/tutorial-aspdac
-    event: "Tutorial Materials"
-
-  - name: Khronos
-    website: https://github.com/pku-liang/ksim/tree/aspdac24-tutorial
-    event: "Simulator Tutorial"
-
-# Case studies for learning
-case_studies:
-  - name: "Post-Quantum Cryptography (NTT)"
-    domain: cryptography
-  - name: "Machine Learning (BitNet quantization)"
-    domain: ml
-  - name: "Digital Signal Processing (IIR filters)"
-    domain: dsp
-
-# Contact information
-contact:
-  name: "Yun (Eric) Liang"
-  email: ericlyun@pku.edu.cn
-  institution: "Peking University, Beijing, China"
+    date: 2025-01-20
