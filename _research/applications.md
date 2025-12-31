@@ -2,10 +2,12 @@
 title: Application Domains
 tag: applications
 order: 5
-summary: Demonstrating practical impact across post-quantum cryptography, machine learning, DSP, and 3D processing.
+summary: Demonstrating practical impact across diverse domains and benchmarks
 ---
 
-Our research demonstrates practical impact across diverse domains:
+Our research demonstrates practical impact across diverse domains. We also propose benchmarks (to come soon) for comprehensive evaluation of processor specialization works.
+
+## Application Domains
 
 ### Post-Quantum Cryptography
 
@@ -22,3 +24,8 @@ IIR filters and phase-locked loops. We provide optimized implementations for com
 ### 3D Point Cloud Processing
 
 Real-time geometry processing for applications in robotics, autonomous vehicles, and AR/VR systems.
+
+
+## Benchmarking
+
+More kernels or applications from diverse domains with comprehensive metrics to evaluate instruction customiztion from multiple aspects.f

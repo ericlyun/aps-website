@@ -7,14 +7,14 @@ summary: Advanced high-level synthesis techniques for efficient translation from
 
 We develop advanced high-level synthesis techniques that enable efficient translation from high-level behavioral descriptions to optimized hardware implementations. Our work focuses on:
 
-### Dynamic Pipeline Architecture
-
-Automated generation of pipelined datapaths from CADL specifications, enabling efficient hardware implementation of complex algorithms.
-
-### ISAX-Specific Scheduling
+## ISAX-Specific Scheduling
 
 SDC-based scheduling with ISAX-specific constraints, optimizing the timing and resource utilization of custom instructions.
 
-### Latency-Insensitive Design
+## Hybrid Latency-Sensitive/-Insensitive Design
 
-Transaction-based hardware construction for flexible timing, allowing modular and composable hardware design.
+Combining static and dynamic HLS scheduling techniques to generate pipelined datapaths for efficient ISAX acceleration.
+
+## High-performance Architecture Support
+
+Diving into HLS analysis and transform techniques as well as spatial-temporal transformation to create design of high parallelism to meet performance requirements.

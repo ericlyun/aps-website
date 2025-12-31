@@ -2,19 +2,19 @@
 title: Retargetable Compiler
 tag: compiler
 order: 4
-summary: Compiler infrastructure that automatically utilizes custom ISAXs for optimized code generation.
+summary: Compiler infrastructure to support finding and utilizing ISAXs for domain-specific acceleration.
 ---
 
-We develop compiler infrastructure that automatically utilizes custom ISAXs:
+We conduct research for two topics: finding instructions to accelerate and using custom instruction in applications.
 
-### Pattern Matching Engine
+## Finding Reusable Custom Instructions
 
-Hybrid semantic-based and profile-guided ISAX matching. Our pattern matching engine identifies opportunities to use custom instructions in application code.
+We use automated techniques, including profiling, pattern identification and selection, to nominate custom instructions from the target application domain, without human intervention. Although this is an classical computer architecture topic, which has been explored for 20 years, we found new opportunities to revisit it with the help of the e-graph and MLIR in the RISC-V and AI era.
 
-### Bitwidth-Aware Vectorization
+## Pattern Matching Engine
 
-Optimizing register utilization for low-bitwidth operations. This technique maximizes throughput for applications with sub-word data types.
+Our pattern matching engine identifies opportunities to use custom instructions in application code. We explore the e-graph data structure for identifying matching patterns with concerns of equivalence under programs.
 
-### Automated Code Generation
+## ML Compiler Integration
 
-From CADL to compiler intrinsics and pattern matchers. Our tools automatically generate the compiler support needed to utilize custom ISAXs.
+We bring supports for APS-generated acceleration solutions to our ML compiler (to appear soon!). This is a very nice marriage in the AI era: you can use APS to generate hardware and the compiler fully utilize the hardware to accelerate the AI applications.

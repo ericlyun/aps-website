@@ -1,7 +1,7 @@
 ---
 name: Youwei Xiao
 title: PhD Student
-role: Lead Developer
+role: Core contributor
 dept:
 institution: Peking University
 webpage: https://uv-xiao.github.io/

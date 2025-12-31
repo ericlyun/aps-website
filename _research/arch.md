@@ -7,14 +7,15 @@ summary: Enabling agile development of domain-specific processors through unifie
 
 Our research enables agile development of domain-specific processors through:
 
-### Unified ISAX Interface (APS-Itfc)
+## Unified ISAX Interface
 
 Cross-platform portability across RISC-V ecosystems. Our unified interface allows ISAX designs to be seamlessly deployed on different processor implementations.
 
-### Automated Integration
+## Automated Integration
 
 Seamless ISAX integration with Chipyard and PULP platforms. Our tools automate the process of integrating custom instructions into existing processor frameworks.
 
-### Dynamic Reconfiguration
+## ISAX-Level Parallelism
 
-Support for multiple concurrent ISAXs, enabling flexible processor customization based on application requirements.
+Support for multiple concurrent ISAXs, boosting performance in a new dimension.
+

@@ -13,34 +13,6 @@ description: Research area layout
 
     <hr>
 
-    <h2>Related Tools</h2>
-    {% assign has_tools = false %}
-    {% for tool_item in site.data.tools %}
-      {% assign tool = tool_item[1] %}
-      {% if tool.research contains page.tag %}
-        {% assign has_tools = true %}
-        <div class="card mb-3">
-          <div class="card-body">
-            <h5 class="card-title">{{ tool.name }}</h5>
-            <h6 class="card-subtitle mb-2 text-muted">{{ tool.title }}</h6>
-            <p class="card-text">{{ tool.description }}</p>
-            {% if tool.github %}
-            <a href="{{ tool.github }}" class="btn btn-sm btn-outline-dark">GitHub</a>
-            {% endif %}
-            {% if tool.crates %}
-            <a href="{{ tool.crates }}" class="btn btn-sm btn-outline-primary">Crates.io</a>
-            {% endif %}
-            {% if tool.docs %}
-            <a href="{{ tool.docs }}" class="btn btn-sm btn-outline-info">Docs</a>
-            {% endif %}
-          </div>
-        </div>
-      {% endif %}
-    {% endfor %}
-    {% unless has_tools %}
-    <p class="text-muted">No tools available for this research area yet.</p>
-    {% endunless %}
-
     <h2>Related Publications</h2>
     {% assign has_pubs = false %}
     <ul class="list-unstyled">

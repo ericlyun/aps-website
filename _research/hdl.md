@@ -2,19 +2,15 @@
 title: Hardware Description Languages
 tag: hdl
 order: 2
-summary: Pioneering new approaches to hardware description through CADL and CMT2 frameworks.
+summary: Pioneering new description abstractions to hardware/ISAX design.
 ---
 
-We pioneer new approaches to hardware description through our CADL and CMT2 frameworks:
+We dive into abstraction and compilation research for hardware description and generation.
 
-### CADL (Cross-level Architecture Description Language)
+## Cement Series
 
-Unified language for ISAX specification from high-level behavior to low-level implementation. CADL bridges the gap between algorithmic description and hardware realization.
+What is the right abstraction to describe hardware? RTL is general and brings troubles according to its low-level, structural nature. We prefer software-style description! Cement at FPGA 2024 explored bringing software procedural description to RTL world. The subsequent version, CMT2, further explored the transactional (or rule-based, Bluespec-style) hardware description. We create DSLs in Rust and also migrate the features to MLIR ecosystem to support the APS project.
 
-### CMT2
+## CADL (Cross-level Architecture Description Language)
 
-Rule-based hardware description in Rust with temporal semantics. CMT2 enables cycle-deterministic hardware design with modern programming language features.
-
-### Transactional Hardware
-
-Modular and composable hardware design methodology that simplifies the development of complex systems through well-defined interfaces and protocols.
+Unified language for ISAX specification from high-level behavior to low-level implementation. CADL bridges the gap between algorithmic description and hardware realization. We want it to be the single specification for ISAX functionality description, hardware specification, and compiler targets.

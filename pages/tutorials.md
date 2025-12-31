@@ -62,26 +62,10 @@ We regularly organize tutorials at major conferences to introduce researchers an
 
 For detailed documentation, please visit our [GitHub repository](https://github.com/pku-liang/aps).
 
-### Related Tools
-
-<div class="row">
-{% for tool in site.data.tutorials.related_tools %}
-<div class="col-md-4 mb-3">
-<div class="card h-100">
-<div class="card-body">
-<h6 class="card-title">{{ tool.name }}</h6>
-<p class="card-text small text-muted">{{ tool.event }}</p>
-<a href="{{ tool.website }}" class="btn btn-outline-dark btn-sm">View Tutorial</a>
-</div>
-</div>
-</div>
-{% endfor %}
-</div>
-
-## Contact
+<!-- ## Contact
 
 For questions about tutorials or to request a tutorial at your institution/conference, please contact:
 
 **{{ site.data.tutorials.contact.name }}**
 Email: [{{ site.data.tutorials.contact.email }}](mailto:{{ site.data.tutorials.contact.email }})
-{{ site.data.tutorials.contact.institution }}
+{{ site.data.tutorials.contact.institution }} -->

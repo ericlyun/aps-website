@@ -25,7 +25,6 @@
   doi: https://arxiv.org/abs/2511.15073
   research: [hdl]
 
-# Conference Papers
 2025.iccad.aps:
   title: "APS: Open-Source Hardware-Software Co-Design Framework for Agile Processor Specialization"
   authors: [Youwei Xiao, Yuyang Zou, Yansong Xu, Yuhao Luo, Yitian Sun, Chenyun Yin, Ruifan Xu, Renze Chen, Yun Liang]  # Add author IDs from authors.yml
@@ -35,24 +34,6 @@
   note: "Invited Paper"
   research: [hls, hdl, processor, compiler]
 
-# Tool Papers
-2024.fpga.popa:
-  title: "POPA: Expressing High and Portable Performance across Spatial and Vector Architectures for Tensor Computations"
-  authors: [Xiaochen Hao, Hongbo Rong, Mingzhe Zhang, Ce Sun, Hong Jiang, Yun Liang]
-  venue: "FPGA 2024"
-  year: 2024
-  doi: https://dl.acm.org/doi/10.1145/3626202.3637566
-  code: https://github.com/pku-liang/popa/tree/mlir
-  research: [hls, arch]
-
-2022.iccad.hector:
-  title: "Hector: Multi-Level Intermediate Representation for Hardware Synthesis"
-  authors: [Ruifan Xu, Youwei Xiao, Jin Luo, Yun Liang]
-  venue: "ICCAD 2022"
-  year: 2022
-  doi: https://ieeexplore.ieee.org/document/10068908
-  code: https://github.com/pku-liang/Hector/tree/tutorial-aspdac
-  research: [hls]
 
 2024.micro.hestia:
   title: "Hestia: An Efficient Cross-Level Debugger for High-Level Synthesis"
@@ -62,6 +43,15 @@
   doi: https://ieeexplore.ieee.org/abstract/document/10764625
   code: https://github.com/pku-liang/hestia/tree/main
   research: [hls, verification]
+
+2024.fpga.popa:
+  title: "POPA: Expressing High and Portable Performance across Spatial and Vector Architectures for Tensor Computations"
+  authors: [Xiaochen Hao, Hongbo Rong, Mingzhe Zhang, Ce Sun, Hong Jiang, Yun Liang]
+  venue: "FPGA 2024"
+  year: 2024
+  doi: https://dl.acm.org/doi/10.1145/3626202.3637566
+  code: https://github.com/pku-liang/popa/tree/mlir
+  research: [hls, arch]
 
 2024.fpga.cement:
   title: "Cement: Streamlining FPGA Hardware Design with Cycle-Deterministic eHDL and Synthesis"
@@ -80,3 +70,12 @@
   doi: https://dl.acm.org/doi/10.1145/3613424.3614301
   code: https://github.com/pku-liang/ksim/tree/aspdac24-tutorial
   research: [verification]
+
+2022.iccad.hector:
+  title: "Hector: Multi-Level Intermediate Representation for Hardware Synthesis"
+  authors: [Ruifan Xu, Youwei Xiao, Jin Luo, Yun Liang]
+  venue: "ICCAD 2022"
+  year: 2022
+  doi: https://ieeexplore.ieee.org/document/10068908
+  code: https://github.com/pku-liang/Hector/tree/tutorial-aspdac
+  research: [hls]
