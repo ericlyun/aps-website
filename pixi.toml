@@ -1,4 +1,4 @@
-[project]
+[workspace]
 name = "aps-website"
 description = "APS website built with Jekyll and Petridish theme"
 authors = ["Youwei Xiao"]

@@ -17,6 +17,9 @@ We regularly organize tutorials at major conferences to introduce researchers an
 <h5 class="card-title">{{ tutorial.conference }}</h5>
 <h6 class="card-subtitle mb-2 text-muted">{{ tutorial.title }}</h6>
 <p class="card-text">{{ tutorial.details }}</p>
+{% if tutorial.page %}
+<a href="{{ tutorial.page | relative_url }}" class="btn btn-primary btn-sm">Tutorial Details</a>
+{% endif %}
 {% if tutorial.website %}
 <a href="{{ tutorial.website }}" class="btn btn-outline-primary btn-sm">Conference Website</a>
 {% endif %}
