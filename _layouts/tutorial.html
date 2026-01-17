@@ -20,6 +20,10 @@ layout: default
   {{ content }}
 
   {% if page.schedule %}
+  {% assign has_handout = false %}
+  {% for session in page.schedule %}
+    {% if session.handout %}{% assign has_handout = true %}{% break %}{% endif %}
+  {% endfor %}
   <section class="tutorial-schedule mt-5">
     <h2>Schedule</h2>
     <div class="table-responsive">
@@ -30,6 +34,7 @@ layout: default
             <th>Session</th>
             <th>Content</th>
             {% if page.schedule[0].speaker %}<th>Speaker</th>{% endif %}
+            {% if has_handout %}<th>Handout</th>{% endif %}
           </tr>
         </thead>
         <tbody>
@@ -39,6 +44,19 @@ layout: default
             <td><strong>{{ session.title }}</strong></td>
             <td>{{ session.description }}</td>
             {% if session.speaker %}<td>{{ session.speaker }}</td>{% endif %}
+            {% if has_handout %}
+            <td>
+              {% if session.handout %}
+                {% if session.handout contains '.pdf' %}
+                  <a href="{{ session.handout | relative_url }}" title="PDF"><i class="fas fa-file-pdf fa-lg text-danger"></i></a>
+                {% elsif session.handout contains '.ppt' or session.handout contains '.pptx' %}
+                  <a href="{{ session.handout | relative_url }}" title="PowerPoint"><i class="fas fa-file-powerpoint fa-lg text-warning"></i></a>
+                {% else %}
+                  <a href="{{ session.handout | relative_url }}" title="Download"><i class="fas fa-file-download fa-lg"></i></a>
+                {% endif %}
+              {% endif %}
+            </td>
+            {% endif %}
           </tr>
           {% endfor %}
         </tbody>

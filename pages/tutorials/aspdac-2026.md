@@ -17,6 +17,7 @@ schedule:
     title: "Hands-on Session"
     description: "Demonstration of the full APS open-source ecosystem."
     speaker: "Youwei Xiao, Yitian Sun, Chenyun Yin, and Yuyang Zou"
+    handout: /assets/tutorials/aspdac-2026/hands-on.pptx
 
 speakers:
   - ericlyun
