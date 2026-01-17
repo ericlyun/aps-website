@@ -44,7 +44,7 @@ _APS is an innovative practice of MLIR-based, automated hardware-software co-des
 
 ### Current Status
 
-We are actively evolving the APS ecosystem towards our vision. We have released two versions of APS so far:
+We are actively evolving the APS ecosystem in line with our vision. We have released two versions of APS so far:
 
 - **APS (ICCAD 2025)**: The first public appearance of APS as a small prototype developed in Rust to showcase the idea of automated hardware-software co-design.
 - **APS 2.0 (Aquas)**: The first MLIR-integrated version of APS, which provides the complete flow around MLIR dialects for both hardware synthesis and compiler generation.
@@ -54,12 +54,12 @@ We are actively evolving the APS ecosystem towards our vision. We have released 
 
 ```bash
 # Clone the repository
-git clone https://github.com/pku-liang/aps.git
+git clone https://github.com/pku-liang/aps-mlir.git
 cd aps
 
 # Follow the documentation for setup and usage
 ```
 
-Visit our [GitHub repository](https://github.com/pku-liang/aps) for more information, documentation, and examples.
+Visit our [GitHub repository](https://github.com/pku-liang/aps-mlir) for more information, documentation, and examples.
 
 We are holding tutorials to help new users get started with APS. See the [Tutorial]({{ '/tutorials/' | relative_url }}) page for details. Stay tuned for upcoming events!
