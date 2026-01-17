@@ -59,7 +59,7 @@ We provide two options for hands-on setup:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/pku-liang/aps-mlir.git --branch apsdac
+git clone https://github.com/pku-liang/aps-mlir.git
 cd aps-mlir
 ```
 
@@ -99,6 +99,8 @@ See the `tutorial/` directory for more examples including matrix operations (`vg
 ### Full ASIP Pipeline
 
 ```bash
+# Enter pixi environment
+pixi shell
 # Synthesize CADL to hardware
 ./tutorial/a1-ex1synth.sh
 # Compile test program with custom instruction
