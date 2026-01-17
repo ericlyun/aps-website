@@ -9,7 +9,7 @@ baseurl: ""                             # Only required if your site is in a dir
 # SOCIAL PROFILES
 social:
   email: shallwe@pku.edu.cn
-  github: pku-liang/aps                 # Can also be a github_username/repository
+  github: pku-liang/aps-mlir                 # Can also be a github_username/repository
 
 # THEME SETTINGS (ALL OPTIONAL)
 posts_on_home: 0                        # Show x number of latest posts on homepage, can be 0
