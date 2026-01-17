@@ -59,18 +59,26 @@ description: Template for team page.
 {% endfor %}
 {% endif %}
 
-{% comment %} Students {% endcomment %}
-{% assign students = people | where_exp: "person", "person.title contains 'Student'" | where_exp: "person", "person.end == ''" %}
-{% if students.size > 0 %}
+{% comment %} Students/Contributors (anyone who is not faculty and is currently active) {% endcomment %}
+{% assign active_people = people | where_exp: "person", "person.end == ''" %}
+{% assign has_students = false %}
+{% for person in active_people %}
+  {% unless person.title contains 'Professor' %}
+    {% assign has_students = true %}
+    {% break %}
+  {% endunless %}
+{% endfor %}
+{% if has_students %}
 <h2>Students</h2>
 <div class="row">
-{% for member in students %}
+{% for member in active_people %}
+{% unless member.title contains 'Professor' %}
   <div class="col-md-6 mb-4">
     <div class="d-flex team-member">
       <div class="flex-shrink-0 me-3">
         {% if member.image %}
           <a href="{{ member.url | relative_url }}">
-            <img src="{{ member.image | relative_url }}" alt="{{ member.name }}" style="max-width: 100px; height: auto;">
+            <img src="{{ member.image | relative_url }}" alt="{{ member.name }}" style="width: 100px; height: 100px; object-fit: cover;">
           </a>
         {% endif %}
       </div>
@@ -100,6 +108,7 @@ description: Template for team page.
       </div>
     </div>
   </div>
+{% endunless %}
 {% endfor %}
 </div>
 {% endif %}

@@ -17,4 +17,4 @@ research:
   - compiler
 ---
 
-Youwei Xiao is a PhD student working on the APS framework, focusing on software techniques for both hardware synthesis and compiler stacks.
+Youwei Xiao is a 4th-year PhD student working on the APS framework. He takes wide interests in software techniques for hardware synthesis, computer architecture, and compilers.
