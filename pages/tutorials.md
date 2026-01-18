@@ -49,8 +49,8 @@ We regularly organize tutorials at major conferences to introduce researchers an
 
 1. **Installation**: Clone the repository and follow the setup instructions
    ```bash
-   git clone https://github.com/pku-liang/aps.git
-   cd aps
+   git clone https://github.com/pku-liang/aps-mlir.git
+   cd aps-mlir
    # Follow README for setup
    ```
 
