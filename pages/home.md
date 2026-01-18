@@ -55,7 +55,7 @@ We are actively evolving the APS ecosystem in line with our vision. We have rele
 ```bash
 # Clone the repository
 git clone https://github.com/pku-liang/aps-mlir.git
-cd aps
+cd aps-mlir
 
 # Follow the documentation for setup and usage
 ```
