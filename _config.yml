@@ -39,9 +39,12 @@ exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
+  - .bundle
+  - .pixi
   - node_modules
   - vendor
   - LICENSE
+  - _site
   - package-lock.json
   - package.json
   - jekyll-theme-petridish.gemspec
