@@ -1,6 +1,6 @@
 ---
 title: Processor Specialization
-tag: processor
+tag: arch
 order: 3
 summary: Enabling agile development of domain-specific processors through unified interfaces and automated integration.
 ---
@@ -18,4 +18,3 @@ Seamless ISAX integration with Chipyard and PULP platforms. Our tools automate t
 ## ISAX-Level Parallelism
 
 Support for multiple concurrent ISAXs, boosting performance in a new dimension.
-

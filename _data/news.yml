@@ -1,9 +1,13 @@
 # News items - most recent first
 # Each item has: date, title, and optionally: link, description
 
+- date: 2026-03-22
+  title: "ISAMORE receives ASPLOS 2026 Best Paper Award"
+  description: "Our work on finding reusable instructions via e-graph anti-unification received the Best Paper Award at ASPLOS 2026."
+  link: /publications/
 - date: 2026-01-19
-  title: "APS tutorial will be presented at ASP-DAC 2026"
-  description: "We will give a tutorial to cover the innovative components of our APS ecosystem!"
+  title: "APS tutorial presented at ASP-DAC 2026"
+  description: "We presented a tutorial covering the innovative components of our APS ecosystem."
   link: /tutorials/
 - date: 2025-10-26
   title: "APS paper presented at ICCAD 2025"

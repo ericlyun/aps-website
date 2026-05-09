@@ -41,6 +41,10 @@ APS aims to build a comprehensive ecosystem based on the **MLIR** infrastructure
 ![alt text](assets/images/vision.png)
 _APS is an innovative practice of MLIR-based, automated hardware-software co-design._
 
+{:.col-md-12 .mx-auto}
+![ISAMORE and APS overview](assets/images/aps-isamore.png)
+_ISAMORE discovers reusable instructions from domain applications and connects them with the APS hardware-software co-design flow._
+
 
 ### Current Status
 
@@ -62,4 +66,4 @@ cd aps-mlir
 
 Visit our [GitHub repository](https://github.com/pku-liang/aps-mlir) for more information, documentation, and examples.
 
-We are holding tutorials to help new users get started with APS. See the [Tutorial]({{ '/tutorials/' | relative_url }}) page for details. Stay tuned for upcoming events!
+We hold tutorials to help new users get started with APS. See the [Tutorial]({{ '/tutorials/' | relative_url }}) page for materials and event details.

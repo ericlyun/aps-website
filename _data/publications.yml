@@ -1,6 +1,16 @@
 # Publications Data
 # Each entry should have: title, authors, venue, year, and optionally: doi, code, pdf, research
 
+2026.asplos.isamore:
+  title: "Finding Reusable Instructions via E-Graph Anti-Unification"
+  authors: [Youwei Xiao, Chenyun Yin, Yitian Sun, Yuyang Zou, Yun Liang]
+  venue: "ASPLOS 2026"
+  year: 2026
+  doi: https://dl.acm.org/doi/10.1145/3779212.3790162
+  code: https://github.com/pku-liang/ISAMORE
+  note: "Best Paper Award"
+  research: [arch, compiler]
+
 2025.arxiv.aquas:
   title: "Aquas: Enhancing Domain Specialization through Holistic Hardware-Software Co-Optimization based on MLIR"
   authors: [Yuyang Zou, Youwei Xiao, Yansong Xu, Chenyun Yin, Yuhao Luo, Yitian Sun, Ruifan Xu, Renze Chen, Yun Liang]
@@ -32,7 +42,7 @@
   year: 2025
   doi: https://ieeexplore.ieee.org/document/11240817
   note: "Invited Paper"
-  research: [hls, hdl, processor, compiler]
+  research: [hls, hdl, arch, compiler]
 
 
 2024.micro.hestia:
