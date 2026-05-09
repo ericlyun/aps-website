@@ -7,6 +7,7 @@ location: Hong Kong, China
 conference_url: https://www.aspdac.com/aspdac2026/program/program-abstract.html#T5
 permalink: /tutorials/aspdac-2026/
 description: A 3-hour tutorial on the APS framework for agile processor specialization
+status: past
 
 schedule:
   - time: "30 minutes"
@@ -31,9 +32,9 @@ speakers:
 
 The rapid evolution of domain-specific applications demands specialized processors with competitive performance and efficiency. While the open RISC-V instruction set architecture (ISA) simplifies the adoption of custom instruction extensions (ISAXs), the overall process of processor specialization remains challenging. It involves a complex interplay of multiple tasks, including behavioral architecture description, hardware synthesis and implementation, processor-ISAX adaptation, and compiler co-generation. Existing RISC-V ecosystems often address these challenges manually, lacking a fully automated and integrated solution. This tutorial introduces **APS** for agile processor specialization based on Multi-Level Intermediate Representation (MLIR). MLIR can support multiple different requirements in a unified infrastructure. _APS provides a unified framework of powerful, open-source EDA and compiler tools for seamless hardware-software co-design_, empowering designers to navigate the complexities of specialization with greater ease and efficiency.
 
-## What You Will Learn
+## What The Tutorial Covered
 
-This tutorial will highlight the methodology and open-source tools within the APS framework, demonstrating a complete software-hardware co-design flow:
+This tutorial highlighted the methodology and open-source tools within the APS framework, demonstrating a complete software-hardware co-design flow:
 
 - **High-level ISAX Description**: Describe ISAXs' behavior at a high, near-software level
 - **MLIR-based HLS**: Synthesize efficient hardware architecture through an MLIR-based high-level synthesis flow with powerful debugging features
@@ -43,12 +44,12 @@ This tutorial will highlight the methodology and open-source tools within the AP
 
 ## Setup Instructions
 
-We've released the APS framework as an open-source project on GitHub: [pku-liang/aps-mlir](https://github.com/pku-liang/aps-mlir/), which includes the tools, examples, and documentation needed for the hands-on session.
+We've released the APS framework as an open-source project on GitHub: [pku-liang/aps-mlir](https://github.com/pku-liang/aps-mlir/), which includes the tools, examples, and documentation used for the hands-on session.
 
-We provide two options for hands-on setup:
+The hands-on materials remain available for self-guided setup:
 
-1. _We'll provide SSH access to a pre-configured APS environment during the tutorial._
-2. You can set up the APS framework on your local machine before the tutorial using the instructions below.
+1. Download the handout from the schedule table.
+2. Set up the APS framework on your local machine using the instructions below.
 
 ### Prerequisites
 

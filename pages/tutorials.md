@@ -9,6 +9,7 @@ permalink: /tutorials/
 
 We regularly organize tutorials at major conferences to introduce researchers and practitioners to our tools and methodologies.
 
+{% if site.data.tutorials.upcoming and site.data.tutorials.upcoming.size > 0 %}
 ## Upcoming Tutorials
 
 {% for tutorial in site.data.tutorials.upcoming %}
@@ -26,6 +27,7 @@ We regularly organize tutorials at major conferences to introduce researchers an
 </div>
 </div>
 {% endfor %}
+{% endif %}
 
 ## Past Tutorials
 
@@ -36,7 +38,12 @@ We regularly organize tutorials at major conferences to introduce researchers an
 <div class="card-body">
 <h5 class="card-title">{{ tutorial.conference }}</h5>
 <p class="card-text">{{ tutorial.title }}</p>
-<a href="{{ tutorial.website }}" class="btn btn-outline-secondary btn-sm">Tutorial Website</a>
+{% if tutorial.page %}
+<a href="{{ tutorial.page | relative_url }}" class="btn btn-outline-secondary btn-sm">Tutorial Details</a>
+{% endif %}
+{% if tutorial.website %}
+<a href="{{ tutorial.website }}" class="btn btn-outline-secondary btn-sm">Conference Website</a>
+{% endif %}
 </div>
 </div>
 </div>

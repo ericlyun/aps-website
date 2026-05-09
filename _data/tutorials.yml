@@ -1,14 +1,14 @@
 # Tutorials organized by status and date
-upcoming:
+upcoming: []
+
+past:
   - conference: ASP-DAC 2026
     title: "APS: An MLIR-Based Hardware-Software Co-design Framework for Agile Processor Specialization"
     website: https://www.aspdac.com/aspdac2026/program/program-abstract.html#T5
     date: 2026-01-19
-    status: upcoming
-    details: "January 19, 2026 in Tokyo, Japan"
+    status: past
+    details: "January 19, 2026 in Hong Kong, China"
     page: /tutorials/aspdac-2026/
-
-past:
 
   - conference: ISEDA 2025
     title: "Agile Hardware Specialization: A toolbox for Agile Chip Front-end Design"
