@@ -1,6 +1,22 @@
 # Publications Data
 # Each entry should have: title, authors, venue, year, and optionally: doi, code, pdf, research
 
+2027.asplos.scaleisa:
+  title: "Customizing Scalable Instructions via Multi-Level E-Graph Anti-Unification"
+  authors: [Yitian Sun, Youwei Xiao, Yuyang Zou, Chenyun Yin, Yun Liang]
+  venue: "ASPLOS 2027"
+  year: 2027
+  doi: https://dl.acm.org/doi/10.1145/3845814.3850048
+  research: [arch, compiler]
+
+2026.iccad.aquas:
+  title: "Aquas: Enhancing Domain Specialization through Holistic Hardware-Software Co-Optimization based on MLIR"
+  authors: [Yuyang Zou, Youwei Xiao, Yansong Xu, Chenyun Yin, Yuhao Luo, Yitian Sun, Ruifan Xu, Renze Chen, Yun Liang]
+  venue: "ICCAD 2026"
+  year: 2026
+  doi: https://dl.acm.org/doi/10.1145/3831252.3834028
+  research: [hls,arch,hdl,compiler]
+
 2026.asplos.isamore:
   title: "Finding Reusable Instructions via E-Graph Anti-Unification"
   authors: [Youwei Xiao, Chenyun Yin, Yitian Sun, Yuyang Zou, Yun Liang]
@@ -10,14 +26,6 @@
   code: https://github.com/pku-liang/ISAMORE
   note: "Best Paper Award"
   research: [arch, compiler]
-
-2025.arxiv.aquas:
-  title: "Aquas: Enhancing Domain Specialization through Holistic Hardware-Software Co-Optimization based on MLIR"
-  authors: [Yuyang Zou, Youwei Xiao, Yansong Xu, Chenyun Yin, Yuhao Luo, Yitian Sun, Ruifan Xu, Renze Chen, Yun Liang]
-  venue: "arXiv"
-  year: 2025
-  doi: https://www.arxiv.org/abs/2511.22267
-  research: [hls,arch,hdl,compiler]
 
 2025.arxiv.skyegg:
   title: "SkyEgg: Joint Implementation Selection and Scheduling for Hardware Synthesis using E-graphs"
