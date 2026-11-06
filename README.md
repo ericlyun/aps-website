@@ -37,7 +37,9 @@ Run `pixi run setup` for a new checkout, then `pixi run build` to validate conte
 The build task exits on Jekyll failures so validation cannot silently pass.
 Inspect the generated pages under `_site/`; use `pixi run serve` for a local preview.
 Pushing to `main` triggers `.github/workflows/jekyll.yml` to build and deploy to
-GitHub Pages. Local edits and commits do not publish the site.
+GitHub Pages. The workflow pins Ubuntu 24.04 and Ruby 3.3 to avoid changes
+when GitHub moves the `ubuntu-latest` label; it uses the maintained
+`ruby/setup-ruby@v1` action. Local edits and commits do not publish the site.
 
 <details>
   <summary>Website building: Jekyll/Petridish </summary>
