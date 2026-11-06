@@ -7,15 +7,12 @@ description: Research area layout
   <div class="col-md-10 col-lg-8 mx-auto">
     <h1>{{ page.title }}</h1>
 
-    <p class="lead">{{ page.summary }}</p>
-
     {{ content }}
 
     <hr>
 
-    <h2>Related Publications</h2>
     {% assign has_pubs = false %}
-    <ul class="list-unstyled">
+    <ul class="list-unstyled" aria-label="Related publications">
     {% for pub_item in site.data.publications %}
       {% assign pub = pub_item[1] %}
       {% if pub.research contains page.tag %}

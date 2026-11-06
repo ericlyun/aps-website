@@ -60,11 +60,12 @@ description: Person profile layout
 
     <hr>
     <h2>Publications</h2>
+    {% assign publication_name = page.publication_name | default: page.name %}
     {% assign has_pubs = false %}
     <ul class="list-unstyled">
     {% for pub_item in site.data.publications %}
       {% assign pub = pub_item[1] %}
-      {% if pub.authors contains page.name %}
+      {% if pub.authors contains publication_name %}
         {% assign has_pubs = true %}
         {% include publication.html pub=pub hide_research=true %}
       {% endif %}

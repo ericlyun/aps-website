@@ -1,7 +1,7 @@
 ---
 name: Chenyun Yin
-title: Undergrad Student
-role: Contributor
+title: Master's Student
+role: Core contributor
 dept:
 institution: Peking University
 image: assets/images/team/chenyun.jpg
@@ -12,8 +12,8 @@ end: ''
 research:
   - hls
   - hdl
-  - processor
+  - arch
   - compiler
 ---
 
-Chenyun Yin is an undergraduate researcher involved in the APS framework, specializing in compiler technology and hardware architecture.
+Chenyun Yin is a master's student involved in the APS framework, specializing in compiler technology and hardware architecture.

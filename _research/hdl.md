@@ -1,16 +1,8 @@
 ---
-title: Hardware Description Languages
+title: Novel Hardware Description Language
 tag: hdl
 order: 2
-summary: Pioneering new description abstractions to hardware/ISAX design.
+summary: Explore procedural and transactional hardware descriptions through Cement, Cement2, and CADL.
 ---
 
-We dive into abstraction and compilation research for hardware description and generation.
-
-## Cement Series
-
-What is the right abstraction to describe hardware? RTL is general and brings troubles according to its low-level, structural nature. We prefer software-style description! Cement at FPGA 2024 explored bringing software procedural description to RTL world. The subsequent version, CMT2, further explored the transactional (or rule-based, Bluespec-style) hardware description. We create DSLs in Rust and also migrate the features to MLIR ecosystem to support the APS project.
-
-## CADL (Cross-level Architecture Description Language)
-
-Unified language for ISAX specification from high-level behavior to low-level implementation. CADL bridges the gap between algorithmic description and hardware realization. We want it to be the single specification for ISAX functionality description, hardware specification, and compiler targets.
+Our hardware-description research studies abstractions that express computation and timing while supporting efficient compilation to RTL. [Cement](https://dl.acm.org/doi/10.1145/3626202.3637561) (FPGA 2024) introduces cycle-deterministic procedural descriptions for FPGA hardware, and [Cement2](https://arxiv.org/abs/2511.15073) (arXiv) develops temporal hardware transactions for high-level FPGA programming. These directions connect software-style descriptions with explicit hardware execution semantics. [APS](https://ieeexplore.ieee.org/document/11240817) (ICCAD 2025) uses CADL to describe custom-instruction behavior within a hardware-software co-design framework, while [Aquas](https://dl.acm.org/doi/10.1145/3831252.3834028) (ICCAD 2026) brings this approach into an MLIR-based flow that connects instruction semantics, hardware synthesis, and software compilation. CADL and CMT2 provide complementary layers: instruction functionality at the source level and transactional hardware behavior during lowering.

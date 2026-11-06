@@ -1,6 +1,6 @@
 ---
 name: Yuyang Zou
-title: MS Student
+title: Master's Student
 role: Core contributor
 dept:
 institution: Peking University
@@ -12,7 +12,7 @@ end: ''
 research:
   - hls
   - hdl
-  - processor
+  - arch
   - compiler
 ---
 

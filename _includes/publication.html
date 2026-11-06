@@ -7,6 +7,9 @@
   <span class="text-muted">
   {% for author_name in pub.authors %}
     {% assign person = site.people | where: "name", author_name | first %}
+    {% unless person %}
+      {% assign person = site.people | where: "publication_name", author_name | first %}
+    {% endunless %}
     {% if person %}
       {% if person.webpage %}<a href="{{ person.webpage }}">{{ person.name }}</a>{% else %}<a href="{{ person.url | relative_url }}">{{ person.name }}</a>{% endif %}{% unless forloop.last %}, {% endunless %}
     {% else %}

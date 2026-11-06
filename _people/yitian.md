@@ -1,7 +1,7 @@
 ---
 name: Yitian Sun
-title: Undergrad Student
-role: Contributor
+title: PhD Student
+role: Core contributor
 dept:
 institution: Peking University
 image: assets/images/team/yitian.jpg
@@ -12,8 +12,8 @@ end: ''
 research:
   - hls
   - hdl
-  - processor
+  - arch
   - compiler
 ---
 
-Yitian Sun is an undergraduate student working on the APS framework, focusing on software techniques for hardware synthesis.
+Yitian Sun is a PhD student working on the APS framework, focusing on software techniques for hardware synthesis.

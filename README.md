@@ -1,6 +1,43 @@
 # APS - Agile Processor Specialization
 
-> Contents on the way...
+The public APS website presents the framework, research areas, publications, release documentation, and tutorials.
+
+## Release documentation
+
+The public `/docs/` section is an APS software release guide: installation,
+instruction finding, hardware synthesis, software compilation, and processor integration. Document each tool's purpose, capabilities, inputs, outputs, configuration, and
+limitations before presenting example commands; these are toolchain references,
+not a repeat of the tutorial. Give ScaleISA a dedicated guide. Its pages live in `pages/docs/`; the shared navigation is
+`_includes/documentation-nav.html`. Use website links between guides and verify
+commands against the APS source checkout. Do not expose repository `docs/` links.
+
+## Updating APS content
+
+Keep capability descriptions in `pages/home.md` and `_research/` aligned with the
+[APS repository](https://github.com/pku-liang/aps-mlir).
+Public website content should link to the repository or examples rather than files under `docs/`.
+The four research areas are Custom Instruction Finding, Novel Hardware Description
+Language, High-level Synthesis, and Processor Specialization, in that order. Each
+uses one narrative paragraph discussing its relevant papers, without body
+subheadings or a repeated lead summary. Application examples belong within these
+areas. Base each paper description on its abstract, using at most one sentence per
+work, then briefly connect the works to APS's goal. Custom Instruction Finding includes only
+ISAMORE and ScaleISA, including its related-publication list. Keep card summaries concise.
+People may specify `publication_name` when their published author name differs from
+their profile name; publication links and profile publication lists use this field.
+The ecosystem figure in `assets/images/overview.jpg` comes from the APS repository's
+`assets/images/overview.jpg`. Update news and publication data only for confirmed
+announcements. Publication code links should point to the implementation and
+branch for that paper: ScaleISA uses `APS-MLIR/tree/main/scaleisa`, Aquas uses
+`APS-MLIR`, the original APS uses `APS/tree/iccad25`, and both Cement and Cement2
+link to the `Cement` repository's `cmt2` branch. Distinguish model estimates, accelerator cycles, and full processor
+measurements when describing evaluation results.
+
+Run `pixi run setup` for a new checkout, then `pixi run build` to validate content.
+The build task exits on Jekyll failures so validation cannot silently pass.
+Inspect the generated pages under `_site/`; use `pixi run serve` for a local preview.
+Pushing to `main` triggers `.github/workflows/jekyll.yml` to build and deploy to
+GitHub Pages. Local edits and commits do not publish the site.
 
 <details>
   <summary>Website building: Jekyll/Petridish </summary>
@@ -62,3 +99,23 @@ The repository structure follows that of Jekyll websites.
 
 </details>
 
+
+## Paper figures
+
+Website figures under `assets/images/papers/` are SVG exports of the supplied
+paper PDFs, preserving the original diagrams. No LaTeX sources or submission
+archives are published. Use descriptive alt text and no visible figure captions. Use relevant diagrams where they clarify the tools; the installation page has no figure. Use `documentation-figure.html` to center figures
+at 70% of the content width (90% on small screens), with links to full-size assets.
+
+| Website asset | Paper source |
+| --- | --- |
+| `isamore-motivation.svg` | ISAMORE, `fig/motivate-p1.pdf` |
+| `scaleisa-overview.svg` | ScaleISA, `fig/overview_new-p1.pdf` |
+| `aps-memory-interfaces.svg` | Aquas, `figures/interface-limitation-p1.pdf` |
+| `aps-memory-schedule.svg` | Aquas, `figures/sequence-p1.pdf` |
+| `aps-compiler.svg` | Aquas, `figures/compiler-final-p1.pdf` |
+
+Keep figure discussion grounded in the accompanying paper; distinguish the
+paper's concepts from command-line support in the current software release.
+
+The overview uses the current APS ecosystem figure.

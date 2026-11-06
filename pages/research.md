@@ -7,7 +7,7 @@ permalink: /research/
 
 # Research Areas
 
-The APS project encompasses several key research areas in computer architecture and compiler design. Click on any area to learn more about its tools and publications.
+Our research connects custom instruction finding, novel hardware description languages, high-level synthesis, and processor specialization. Explore each area for the related papers and its role in the APS ecosystem.
 
 {% assign research_areas = site.research | sort: 'order' %}
 
@@ -24,14 +24,3 @@ The APS project encompasses several key research areas in computer architecture 
 </div>
 {% endfor %}
 </div>
-
-## Future Directions
-
-We continue to explore new frontiers in agile processor specialization, including:
-
-- Enhanced compiler optimizations for complex control flow
-- Support for more RISC-V platforms and ISA extensions
-- Integration with emerging application domains
-- Automated design space exploration for ISAX optimization
-
-For more details on specific projects and publications, please visit our [Publications]({{ '/publications/' | relative_url }}) page.

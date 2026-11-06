@@ -7,6 +7,7 @@
   venue: "ASPLOS 2027"
   year: 2027
   doi: https://dl.acm.org/doi/10.1145/3845814.3850048
+  code: https://github.com/pku-liang/APS-MLIR/tree/main/scaleisa
   research: [arch, compiler]
 
 2026.iccad.aquas:
@@ -15,7 +16,8 @@
   venue: "ICCAD 2026"
   year: 2026
   doi: https://dl.acm.org/doi/10.1145/3831252.3834028
-  research: [hls,arch,hdl,compiler]
+  code: https://github.com/pku-liang/APS-MLIR
+  research: [hls, arch, hdl]
 
 2026.asplos.isamore:
   title: "Finding Reusable Instructions via E-Graph Anti-Unification"
@@ -28,8 +30,8 @@
   research: [arch, compiler]
 
 2025.arxiv.skyegg:
-  title: "SkyEgg: Joint Implementation Selection and Scheduling for Hardware Synthesis using E-graphs"
-  authors: [Youwei Xiao, Yuyang Zou, Yun Liang]
+  title: "SkyEgg: Heterogeneity-Aware Hardware Synthesis via Equality Saturation"
+  authors: [Yuyang Zou, Youwei Xiao, Yitian Sun, Yun Liang]
   venue: "arXiv"
   year: 2025
   doi: https://arxiv.org/abs/2511.15323
@@ -41,6 +43,7 @@
   venue: "arXiv"
   year: 2025
   doi: https://arxiv.org/abs/2511.15073
+  code: https://github.com/pku-liang/Cement/tree/cmt2
   research: [hdl]
 
 2025.iccad.aps:
@@ -49,8 +52,9 @@
   venue: "ICCAD 2025"
   year: 2025
   doi: https://ieeexplore.ieee.org/document/11240817
+  code: https://github.com/pku-liang/APS/tree/iccad25
   note: "Invited Paper"
-  research: [hls, hdl, arch, compiler]
+  research: [hls, hdl, arch]
 
 
 2024.micro.hestia:
@@ -69,7 +73,7 @@
   year: 2024
   doi: https://dl.acm.org/doi/10.1145/3626202.3637566
   code: https://github.com/pku-liang/popa/tree/mlir
-  research: [hls, arch]
+  research: [hls]
 
 2024.fpga.cement:
   title: "Cement: Streamlining FPGA Hardware Design with Cycle-Deterministic eHDL and Synthesis"
@@ -87,7 +91,7 @@
   year: 2023
   doi: https://dl.acm.org/doi/10.1145/3613424.3614301
   code: https://github.com/pku-liang/ksim/tree/aspdac24-tutorial
-  research: [verification]
+  research: [hls, verification]
 
 2022.iccad.hector:
   title: "Hector: Multi-Level Intermediate Representation for Hardware Synthesis"

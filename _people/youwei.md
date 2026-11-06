@@ -13,7 +13,7 @@ end: ''
 research:
   - hls
   - hdl
-  - processor
+  - arch
   - compiler
 ---
 
